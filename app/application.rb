@@ -23,17 +23,4 @@ class Application
     resp.finish
   end
 
-  def game
-    num_1 = Kernel.rand(1..20)
-    num_2 = Kernel.rand(1..20)
-    num_3 = Kernel.rand(1..20)
-
-    if num_1 == num_2 && num_2 == num_3
-      return "You win!"
-    else 
-      return "You Lose. Hit Refresh to Play Again."
-    end
-
-  end 
-
 end
